@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { FiArrowRight, FiArrowDown } from "react-icons/fi";
-import { FaPenNib, FaBolt, FaDesktop, FaMapMarkerAlt, FaUserClock, FaWhatsapp, FaPhoneAlt} from "react-icons/fa";
+import { FaPenNib, FaBolt, FaDesktop, FaMapMarkerAlt, FaUserClock, FaWhatsapp} from "react-icons/fa";
 import { FaArrowUpLong } from "react-icons/fa6";
 import { IoRocketSharp } from "react-icons/io5";
 import { PiBuildingApartmentFill } from "react-icons/pi";
@@ -206,7 +206,7 @@ const WolfLandingPage = () => {
               className="btn-primary"
               onClick={(e) => handleNavClick(e, "#contato")}
             >
-              Solicitar Orçamento <FiArrowRight   />
+              Solicitar Orçamento <FiArrowRight />
             </a>
             <a
               href="#projetos"
@@ -294,7 +294,7 @@ const WolfLandingPage = () => {
 
           <div className="service-card">
             <div className="service-icon">
-            <PiBuildingApartmentFill />
+              <PiBuildingApartmentFill />
             </div>
             <h3>Sites Institucionais</h3>
             <p>
@@ -674,19 +674,12 @@ const WolfLandingPage = () => {
           </div>
           <div className="footer-section">
             <h4>Contato</h4>
-            <p>
-            (47) 9979-0495
-            </p>
-            <p>
-            Joinville, SC - Brasil
-            </p>
+            <p>(47) 9979-0495</p>
+            <p>Joinville, SC - Brasil</p>
           </div>
         </div>
         <div className="footer-bottom">
-          <p>
-            &copy; 2025 Wolf. Todos os direitos
-            reservados.
-          </p>
+          <p>&copy; 2025 Wolf. Todos os direitos reservados.</p>
         </div>
       </footer>
 
