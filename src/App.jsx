@@ -111,7 +111,7 @@ const WolfLandingPage = () => {
       <header id="header">
         <nav>
           <div className="logo">
-            <img src="public/Logo.svg" alt="" />
+            <img src="../public/Logo.svg" alt="" />
           </div>
           <ul
             className={`nav-links ${isMenuOpen ? "active" : ""}`}
@@ -429,7 +429,7 @@ const WolfLandingPage = () => {
         <div className="projects-grid">
           <div className="project-card">
             <div className="project-image">
-              <img src="public/costura.png" alt="" />
+              <img src="../public/costura.png" alt="" />
             </div>
             <div className="project-info">
               <span className="project-category">Landing Page</span>
@@ -454,7 +454,7 @@ const WolfLandingPage = () => {
 
           <div className="project-card">
             <div className="project-image">
-              <img src="public/barbearia.png" alt="" />
+              <img src="../public/barbearia.png" alt="" />
             </div>
             <div className="project-info">
               <span className="project-category">Redesign</span>
@@ -479,7 +479,7 @@ const WolfLandingPage = () => {
 
           <div className="project-card">
             <div className="project-image">
-              <img src="public/devforge.png" alt="" />
+              <img src="../public/devforge.png" alt="" />
             </div>
             <div className="project-info">
               <span className="project-category">Redsigner</span>
@@ -504,7 +504,7 @@ const WolfLandingPage = () => {
 
           <div className="project-card">
             <div className="project-image">
-              <img src="public/solidaconstrucao.png" alt="" />
+              <img src="../public/solidaconstrucao.png" alt="" />
             </div>
             <div className="project-info">
               <span className="project-category">Site Institucional</span>
