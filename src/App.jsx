@@ -1,14 +1,26 @@
 import { useState, useEffect, useRef } from "react";
 import { FiArrowRight, FiArrowDown } from "react-icons/fi";
-import { FaPenNib, FaBolt, FaDesktop, FaMapMarkerAlt, FaUserClock, FaWhatsapp} from "react-icons/fa";
+import {
+  FaPenNib,
+  FaBolt,
+  FaDesktop,
+  FaMapMarkerAlt,
+  FaUserClock,
+  FaWhatsapp,
+} from "react-icons/fa";
 import { FaArrowUpLong } from "react-icons/fa6";
 import { IoRocketSharp } from "react-icons/io5";
 import { PiBuildingApartmentFill } from "react-icons/pi";
 import { BsDatabaseFillUp } from "react-icons/bs";
 import { IoLogoWhatsapp } from "react-icons/io";
+import logo from "./assets/Logo.svg";
+import solida from "./assets/solidaconstrucao.jpg";
+import costura from "./assets/costura.jpg";
+import barbearia from "./assets/barbearia.jpg";
+import devforge from "./assets/devforge.jpg";
 import "./App.css";
 
-const WolfLandingPage = () => {
+const WulfLandingPage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [showBackToTop, setShowBackToTop] = useState(false);
   const [formData, setFormData] = useState({
@@ -84,7 +96,7 @@ const WolfLandingPage = () => {
     e.preventDefault();
 
     const { name, email, message } = formData;
-    let whatsappMessage = `*🐺 Novo Contato - Wolf*%0A%0A`;
+    let whatsappMessage = `*🐺 Novo Contato - Wulf*%0A%0A`;
     whatsappMessage += `*Nome:* ${encodeURIComponent(name)}%0A`;
     whatsappMessage += `*E-mail:* ${encodeURIComponent(email)}%0A`;
     whatsappMessage += `%0A*Mensagem:*%0A${encodeURIComponent(message)}`;
@@ -111,7 +123,7 @@ const WolfLandingPage = () => {
       <header id="header">
         <nav>
           <div className="logo">
-            <img src="../public/Logo.svg" alt="" />
+            <img src={logo} alt="" />
           </div>
           <ul
             className={`nav-links ${isMenuOpen ? "active" : ""}`}
@@ -177,7 +189,7 @@ const WolfLandingPage = () => {
         <div className="hero-content">
           <div className="hero-badge">Sua presença digital começa aqui</div>
           <h1>
-            <span className="gradient-text">WOLF</span>
+            <span className="gradient-text">WULF</span>
           </h1>
           <p>
             Criamos páginas que expressam a essência da sua marca, com design
@@ -223,14 +235,14 @@ const WolfLandingPage = () => {
       <section className="about fade-in" id="sobre">
         <div className="section-header">
           <span className="section-badge">SOBRE NÓS</span>
-          <h2>Sobre a Wolf</h2>
+          <h2>Sobre a Wulf</h2>
           <p>Transformamos visões em experiências digitais de alto impacto</p>
         </div>
         <div className="about-content">
           <div className="about-text">
             <h3>Quem Somos</h3>
             <p>
-              A Wolf é especializada na criação de landing pages e sites
+              A Wulf é especializada na criação de landing pages e sites
               personalizados que não apenas impressionam visualmente, mas também
               geram resultados concretos para nossos clientes.
             </p>
@@ -381,11 +393,11 @@ const WolfLandingPage = () => {
           <div className="tech-card">
             <div className="tech-icon">
               <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mariadb/mariadb-original.svg"
-                alt="MariaDB"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                alt="PostgreSQL"
               />
             </div>
-            <h4>MariaDB</h4>
+            <h4>PostgreSQL</h4>
           </div>
 
           <div className="tech-card">
@@ -429,7 +441,7 @@ const WolfLandingPage = () => {
         <div className="projects-grid">
           <div className="project-card">
             <div className="project-image">
-              <img src="../public/costura.png" alt="" />
+              <img src={costura} alt="" />
             </div>
             <div className="project-info">
               <span className="project-category">Landing Page</span>
@@ -454,7 +466,7 @@ const WolfLandingPage = () => {
 
           <div className="project-card">
             <div className="project-image">
-              <img src="../public/barbearia.png" alt="" />
+              <img src={barbearia} alt="" />
             </div>
             <div className="project-info">
               <span className="project-category">Redesign</span>
@@ -479,7 +491,7 @@ const WolfLandingPage = () => {
 
           <div className="project-card">
             <div className="project-image">
-              <img src="../public/devforge.png" alt="" />
+              <img src={devforge} alt="" />
             </div>
             <div className="project-info">
               <span className="project-category">Redsigner</span>
@@ -504,7 +516,7 @@ const WolfLandingPage = () => {
 
           <div className="project-card">
             <div className="project-image">
-              <img src="../public/solidaconstrucao.png" alt="" />
+              <img src={solida} alt="" />
             </div>
             <div className="project-info">
               <span className="project-category">Site Institucional</span>
@@ -633,7 +645,7 @@ const WolfLandingPage = () => {
       <footer>
         <div className="footer-content">
           <div className="footer-section">
-            <h4>WOLF</h4>
+            <h4>WULF</h4>
             <p>
               Criando experiências digitais que convertem e encantam desde 2020.
               Transformamos sua visão em realidade digital.
@@ -679,7 +691,7 @@ const WolfLandingPage = () => {
           </div>
         </div>
         <div className="footer-bottom">
-          <p>&copy; 2025 Wolf. Todos os direitos reservados.</p>
+          <p>&copy; 2025 Wulf. Todos os direitos reservados.</p>
         </div>
       </footer>
 
@@ -704,4 +716,4 @@ const WolfLandingPage = () => {
   );
 };
 
-export default WolfLandingPage;
+export default WulfLandingPage;

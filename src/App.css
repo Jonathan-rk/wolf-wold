@@ -1621,7 +1621,7 @@ footer {
   .footer-content {
     grid-template-columns: 2fr;
     gap: 1rem;
-    text-align: center;
+    text-align: left;
   }
 
   .social-links {
